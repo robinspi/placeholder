@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Philip Robinson</title>
+    <style>
+      :root {
+        --longbar: 33vw;
+        --mediumbar: 25vw;
+        --shortbar: 15vw;
+      }
+      
+      #overlay p {
+        color: rgba(255,255,255,0.3);
+        letter-spacing: 1pt;
+        font-style: italic;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        background-color: #212;
+        height: 100vh;
+        font-family: sans-serif;
+        overflow: hidden;
+      }
+
+      #overlay{
+        position: fixed;
+        display: flex;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 2;
+        background: rgba(0,0,0,0);
+        background: radial-gradient(circle, rgba(46,23,39,0) 40%, rgba(0,0,0,0.375) 75%, rgba(0,0,0,0.75) 100%);
+        justify-content: center;
+        align-items: flex-end;
+        user-select: none;
+      }
+
+      #comingSoon {
+        padding: 20px;
+        background: rgb(255,0,102);
+        background: linear-gradient(90deg, rgba(255,0,102,1) 0%, rgba(136,65,191,1) 100%);
+        color: #EEE;
+        letter-spacing: 1pt;
+        font-size: 22pt;
+        font-style: italic;
+        font-weight: bold;
+        width: 30vw;
+        text-align: center;
+      }
+
+      .redLeftTriangle {
+        width: 0px; 
+        border-top: 132px solid #212;
+        border-right: 180px solid #FF0066;
+      }
+
+      .redRightTriangle {
+        width: 0px;
+        border-bottom: 132px solid #212; 
+        border-left: 180px solid #FF0066;
+      }
+
+      .purpleRightTriangle {
+        width: 0px; 
+        border-bottom: 132px solid #212; 
+        border-left: 180px solid #8841BF;
+      }
+
+      .purpleLeftTriangle {
+        width: 0px; 
+        border-top: 132px solid #212;
+        border-right: 180px solid #8841BF;
+      }
+
+      .redRibbon {
+        height: 100%;
+        background-color: #FF0066;
+      }
+
+      .purpleRibbon {
+        height: 100%;
+        background-color: #8841BF;
+      }
+
+      .longRibbon {
+        width: var(--longbar);
+      }
+
+      .mediumRibbon {
+        width: var(--mediumbar);
+      }
+
+      .shortRibbon {
+        width: var(--shortbar);
+      }
+
+      .triangleRow {
+        display: flex;
+        width: 100%;
+      }
+
+      .centeredRow {
+        justify-content: center;
+      }
+
+      .rightRow {
+        justify-content: flex-end;
+      }
+
+      .leftRow {
+        justify-content: flex-start;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="overlay"><p>Philip Robinson, 2021</p></div>
+
+    <div class="triangleRow leftRow">
+      <div class="purpleRibbon longRibbon"></div>
+      <div class="purpleRightTriangle"></div>
+    </div>
+
+    <div class="triangleRow rightRow">
+      <div class="redLeftTriangle"></div>
+      <div class="redRibbon mediumRibbon"></div>
+    </div>
+
+    <div class="triangleRow leftRow">
+      <div class="redRibbon shortRibbon"></div>
+      <div class="redRightTriangle"></div>
+    </div>
+
+    <div class="triangleRow rightRow">
+      <div class="purpleLeftTriangle"></div>
+      <div class="purpleRibbon shortRibbon"></div>
+    </div>
+
+    <div class="triangleRow leftRow">
+      <div class="redRibbon mediumRibbon"></div>
+      <div class="redRightTriangle"></div>
+    </div>
+
+    <div class="triangleRow rightRow">
+      <div class="redLeftTriangle"></div>
+      <div class="redRibbon longRibbon"></div>
+    </div>
+
+    <div class="triangleRow centeredRow">
+      <div class="redLeftTriangle"></div>
+      <div id="comingSoon">
+        <p>Something special coming soon...</p>
+      </div>
+      <div class="purpleRightTriangle"></div>
+    </div>
+
+    <div class="triangleRow leftRow">
+      <div class="purpleRibbon longRibbon"></div>
+      <div class="purpleRightTriangle"></div>
+    </div>
+
+    <div class="triangleRow rightRow">
+      <div class="purpleLeftTriangle"></div>
+      <div class="purpleRibbon shortRibbon"></div>
+    </div>
+
+    <div class="triangleRow leftRow">
+      <div class="redRibbon shortRibbon"></div>
+      <div class="redRightTriangle"></div>
+    </div>
+
+    <div class="triangleRow rightRow">
+      <div class="purpleLeftTriangle"></div>
+      <div class="purpleRibbon longRibbon"></div>
+    </div>
+
+    <div class="triangleRow leftRow">
+      <div class="purpleRibbon mediumRibbon"></div>
+      <div class="purpleRightTriangle"></div>
+    </div>
+
+    <div class="triangleRow rightRow">
+      <div class="redLeftTriangle"></div>
+      <div class="redRibbon shortRibbon"></div>
+    </div>
+  </body>
+</html>
